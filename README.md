@@ -3,7 +3,7 @@
 This script monitors RSS feeds and posts new updates to a Discord channel using a webhook.
 
 ## Features
-- Supports as many RSS feeds as you wish.
+- Supports RSS feeds from any source.
 - Saves last checked entries to avoid reposting old entries on restart.
 - Checks for updates automatically every 30 minutes if the script is left running.
 
@@ -29,8 +29,8 @@ This script monitors RSS feeds and posts new updates to a Discord channel using 
 
 4. **Fill out your webhook.txt and feeds.txt**:
    ```text
-   webhook.txt should contain the URL of your Discord webhook
-   feeds.txt should contain the URLs of your RSS feeds (one per line)
+   - webhook.txt should contain the URL of your Discord webhook
+   - feeds.txt should contain the URLs of your RSS feeds (one per line)
 
 5. **Run the Script**:
    ```bash
