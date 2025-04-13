@@ -20,7 +20,7 @@ try:
             i += 1
             line = line.strip()
             if line:  # Skip empty lines
-                feeds.append({'name': "Feed" + str(i), 'url': line, 'last_entry': None})
+                feeds.append({'name': f"Feed {i}", 'url': line, 'last_entry': None})
 except FileNotFoundError:
     print("Error: feeds.txt not found. Please create it with your RSS feeds")
     exit(1)
