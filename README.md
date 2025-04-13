@@ -34,4 +34,4 @@ This script monitors RSS feeds and posts new updates to a Discord channel using 
 
 5. **Run the Script**:
    ```bash
-   python rss_to_discord.py
+   python main.py --delay 1 --start-from 0
