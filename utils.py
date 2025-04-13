@@ -14,7 +14,7 @@ def save_last_entries(last_entries, file_path):
     """Save last_entry IDs to a JSON file, sorted by feed number."""
     sorted_entries = dict(sorted(
         last_entries.items(),
-        key=lambda x: int(x[0].split("Feed ")[-1]) if "Feed " in x[0] else -1
+        key=lambda x: int(x[0].lstrip("Feed")) if x[0].startswith("Feed") else -1
     ))
     with open(file_path, 'w') as f:
         json.dump(sorted_entries, f, indent=4)
